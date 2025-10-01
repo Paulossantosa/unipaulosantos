@@ -10,7 +10,6 @@
     --shadow-color: rgba(50, 50, 93, 0.1);
     --btn-text-color: #ffffff;
 }
-
 body.dark-mode {
     /* TEMA ESCURO: Paleta "Noite e Néon Púrpura" */
     --bg-color: #1a1a2e;
@@ -23,12 +22,11 @@ body.dark-mode {
     --shadow-color: rgba(0, 0, 0, 0.2);
     --btn-text-color: #ffffff;
 }
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding-top: 70px;
-    background-image: url('../img/blue-watercolor');
+    background-image: url('../img/blue-watercolor.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,14 +35,12 @@ body {
     color: var(--text-color);
     transition: background-color 0.4s, color 0.4s;
 }
-
 h1 {
     color: var(--accent-color);
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
 }
-
 header {
     background-color: var(--header-bg);
     color: var(--header-text);
@@ -58,7 +54,6 @@ header {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -66,20 +61,17 @@ nav {
     height: 70px;
     gap: 2rem;
 }
-
 nav .logo {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--accent-color);
 }
-
 nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
     margin: 0;
 }
-
 nav a {
     color: var(--header-text);
     text-decoration: none;
@@ -87,11 +79,9 @@ nav a {
     font-weight: 500;
     transition: color 0.3s;
 }
-
 nav a:hover {
     color: var(--accent-color);
 }
-
 #theme-toggle {
     padding: 0.5rem 1rem;
     background-color: var(--accent-color);
@@ -102,18 +92,15 @@ nav a:hover {
     font-weight: 600;
     transition: transform 0.2s, opacity 0.2s;
 }
-
 #theme-toggle:hover {
     opacity: 0.9;
     transform: scale(1.05);
 }
-
 main {
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
 }
-
 section {
     padding: 40px 20px;
     margin-bottom: 20px;
@@ -124,7 +111,6 @@ section {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--border-color);
 }
-
 .profile-pic {
     display: block;
     width: 150px;
@@ -134,13 +120,11 @@ section {
     border: 3px solid var(--accent-color);
     box-shadow: 0 0 15px var(--accent-color);
 }
-
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
 .portfolio-item {
     background-color: var(--bg-color);
     padding: 20px;
@@ -148,29 +132,24 @@ section {
     border: 1px solid var(--border-color);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .portfolio-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px var(--shadow-color);
 }
-
 .portfolio-item a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
 }
-
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 form label {
     font-weight: bold;
     color: var(--accent-color);
 }
-
 form input,
 form textarea {
     padding: 12px;
@@ -182,7 +161,6 @@ form textarea {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
 form button {
     padding: 12px;
     background-color: var(--accent-color);
@@ -194,11 +172,9 @@ form button {
     font-weight: 600;
     transition: background-color 0.3s;
 }
-
 form button:hover {
     opacity: 0.9;
 }
-
 .error-container {
     padding: 10px;
     border-radius: 5px;
@@ -207,7 +183,6 @@ form button:hover {
     font-weight: 500;
     display: none;
 }
-
 footer {
     text-align: center;
     padding: 20px;
