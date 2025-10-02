@@ -217,3 +217,52 @@ footer {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
+/* --- REGRAS PARA TELAS MENORES (CELULARES E TABLETS) --- */
+@media (max-width: 768px) {
+    
+    /* Ajusta o corpo da página para ter menos espaçamento */
+    body {
+        padding-top: 120px; /* Aumenta o espaço no topo para o novo menu */
+    }
+
+    /* Centraliza o conteúdo do cabeçalho */
+    header {
+        padding: 0 1rem;
+    }
+
+    /* Empilha o menu verticalmente para caber na tela */
+    nav {
+        flex-direction: column; /* Coloca os itens um embaixo do outro */
+        height: auto;           /* Altura automática para acomodar os itens */
+        padding: 0.5rem 0;      /* Ajusta o espaçamento interno */
+        gap: 0.5rem;            /* Diminui o espaço entre logo, links e botão */
+    }
+    
+    /* Organiza os links do menu em uma coluna também */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;             /* Remove o preenchimento padrão da lista */
+        text-align: center;
+    }
+
+    /* Diminui o espaçamento geral do conteúdo */
+    main {
+        padding: 1rem;
+    }
+
+    /* Reduz o tamanho da fonte dos títulos para não ficarem enormes */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav .logo {
+        font-size: 1.4rem;
+    }
+    
+    /* Diminui um pouco a foto de perfil */
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
